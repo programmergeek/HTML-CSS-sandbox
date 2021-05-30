@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    position: inline;
 }
 
 #hero-banner{
@@ -44,4 +45,18 @@ body{
     text-decoration: none;
     background-color: none;
     color: white;
+}
+
+#about-me{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: absolute;
+    top: 60%;
+    background-color: #FFD166;
+    width: 100%;
+    height: 50%;
+}
+
+#about-me #text{
+    padding-left: 15px;
 }
