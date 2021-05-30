@@ -57,6 +57,15 @@ body{
     height: 50%;
 }
 
-#about-me #text{
-    padding-left: 15px;
+.text{
+    padding: 15px;
+}
+
+#resume{
+    position: absolute;
+    top: 110%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 99%;
+    height: 600px;
 }
