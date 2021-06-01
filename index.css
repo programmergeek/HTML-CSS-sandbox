@@ -91,7 +91,6 @@ body{
     background-color: white;
     width: 500px;
     color: black;
-    margin-bottom: 100px;
     box-shadow: 
     0 2.8px 3px rgba(0, 0, 0, 0.014),
     0 6.7px 5.3px rgba(0, 0, 0, 0.02),
@@ -112,4 +111,25 @@ body{
 .card-title, .card-description{
     padding-left: 15px;
     text-align: left;
+}
+
+#socials{
+    position: absolute;
+    top: 1700px;
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    width: 99%;
+    text-align: center;
+}
+
+#socials .icon{
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#socials a{
+    text-decoration: none;
+    color: black;
 }
