@@ -89,26 +89,18 @@ body{
 }
 
 @keyframes enlarge {
-    from {
-        box-shadow: 
-        0 2.8px 3px rgba(0, 0, 0, 0.014),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.02),
-        0 12.5px 10px rgba(0, 0, 0, 0.025),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.03),
-        0 41.8px 33px rgba(0, 0, 0, 0.036),
-        0 100px 80px rgba(0, 0, 0, 0.05)
+    0% {
+        transform: translateY(0)
     ;
     }
 
+    50%{
+        transform: translateY(-10px);
+        
+    }
+
     to{
-        transform: scale(1.05);
-        box-shadow: 
-    0 2.8px 3px rgba(0, 0, 0, 0.048),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.069),
-    0 12.5px 10px rgba(0, 0, 0, 0.085),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.103),
-    0 41.8px 33px rgba(0, 0, 0, 0.122),
-    0 100px 80px rgba(0, 0, 0, 0.17)
+        transform: translateY(0)
     ;
     }
 }
@@ -131,9 +123,10 @@ body{
 }
 
 .card:hover{
-    animation-duration: 0.1s;
+    animation-duration: 1s;
     animation-name: enlarge;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
 
@@ -148,9 +141,8 @@ body{
 }
 
 #socials{
-    visibility: hidden;
     position: absolute;
-    top: 1700px;
+    top: 2900px;
     display: grid;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     width: 99%;
