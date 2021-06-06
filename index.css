@@ -253,19 +253,41 @@ body{
     }
 
     #about-me{
+        display: flex;
         position: static;
         height: 1500px;
     }
 
+    #about-me .text{
+        background-color: var(--secondary-colour);
+    }
+
     #resume{
+        display: flex;
         position: static;
+    }
+
+    #resume .text{
+        background-color: var(--primary-colour);
     }
 
     #socials{
         position: static;
+        background-color: var(--primary-colour);
     }
 
     #portfolio{
         position: static;
+        flex-direction: column;
+        width: 99%;
+    }
+
+    #carousel{
+        overflow-y: scroll;
+    }
+
+    .card{
+        margin: auto;
+        margin-top: 20px;
     }
 }
