@@ -202,9 +202,20 @@ body{
 
 @media screen and (max-width: 1200px) {
 
+    .slide-show{
+        height: 100%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+    .slide{
+        height: 100%;
+        display: flex;
+    }
+
     #hero-banner{
         height: 100%;
-        display: block;
+        position: static;
     }
 
     #nav-buttons{
@@ -224,6 +235,7 @@ body{
     }
 
     #action-button{
+        position: relative;
         left: 8%;
         top: 80%;
     }
@@ -241,19 +253,19 @@ body{
     }
 
     #about-me{
-        visibility: hidden;
+        position: static;
+        height: 1500px;
     }
 
     #resume{
-        visibility: hidden;
+        position: static;
     }
 
-
     #socials{
-        visibility: hidden;
+        position: static;
     }
 
     #portfolio{
-        visibility: hidden;
+        position: static;
     }
 }
