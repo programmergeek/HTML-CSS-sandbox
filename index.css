@@ -195,3 +195,65 @@ body{
     text-decoration: none;
     color: black;
 }
+
+#mobile-nav-buttons{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #hero-banner{
+        height: 100%;
+        display: block;
+    }
+
+    #nav-buttons{
+        display: none;
+    }
+
+    #mobile-nav-buttons{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 5000;
+        right: 0;
+        background-color: black;
+        padding: 5px;
+        height: 100%;
+        justify-content: center;
+    }
+
+    #action-button{
+        left: 8%;
+        top: 80%;
+    }
+
+    .mnav{
+        height: 20px;
+        width: 20px;
+        border-radius: 15px;
+        border: 5px solid white;
+        margin-top: 10px;
+    }
+
+    .mnav:hover{
+        background-color: white;
+    }
+
+    #about-me{
+        visibility: hidden;
+    }
+
+    #resume{
+        visibility: hidden;
+    }
+
+
+    #socials{
+        visibility: hidden;
+    }
+
+    #portfolio{
+        visibility: hidden;
+    }
+}
